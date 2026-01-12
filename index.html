@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Global Tour - Welcome</title>
+        <link rel="stylesheet" href="other/css/style.css">
+        <script>
+            function playvid(){
+                var text = document.getElementById("main-more");
+                var image = document.getElementById("earth-bg");
+                var video = document.getElementById("earthr")
+                text.style.display = "none";
+                image.style.display = "none";
+                video.style.display = "block";
+                video.play();
+                video.onended = function(){
+                    window.location.href = "html/continents.html";
+                }
+            }
+            function zoomIn(){
+                document.getElementById("earth-bg").style.transform = "scale(1.2)";
+            }
+            function zoomOut(){
+                document.getElementById("earth-bg").style.transform = "scale(1)";
+            }
+        </script>
+    </head>
+
+    <body>
+        <header class="main-section">
+            <div class="bg-wrapper" id="earth-bg"></div>
+            <video id="earthr" class="bg-video" muted>
+                <source src="other/videos/Earth_r.mp4" type="video/mp4">
+            </video>
+            <div class="main-content" id="main-more">
+                <h1>The world at your fingertips.</h1>
+                <p>Every continent tells a story. Whether you are planning your next vacation or just dreaming of distant shores, we are here to guide you. Our team has scouted the best destinations across the globe—highlighting the hidden gems of the Americas, the ancient wonders of Africa, and the pristine nature of Oceania. Pack your virtual bags and let’s explore.</p>
+                <a onmouseover="zoomIn()" onmouseout="zoomOut()" onclick="playvid()" class="cta-button">Start Your Journey</a>
+            </div>
+        </header>
+        
+    </body>
+</html>
