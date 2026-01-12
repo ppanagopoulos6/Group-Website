@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Discover Egypt</title>
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+                line-height: 1.6;
+            }
+            .header{
+                background-color: #b22222;
+                color: white;
+                padding: 40px 20px;
+                text-align: center;
+                box-shadow: 0 4px 6px rgb(0, 0, 0,0.1);
+            }
+            .header h1{
+                margin: 0;
+                font-size: 3em;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+            .intro{
+                max-width: 800px;
+                margin: 30px auto;
+                padding: 20px;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgb(0, 0, 0,0.1);
+                text-align: center;
+            }
+            .section title{
+                text-align: center;
+                color: #006400;
+                font-size: 2em;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                border-bottom: 3px solid #b22222;
+                display: inline-block;
+                padding-bottom: 10px;
+            }
+            .section-container{
+                text-align: center;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto 50px auto;
+                padding: 0 20px;
+            }
+            .card{
+                background: white;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .card img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover; 
+            }
+            .card-content{
+                padding: 20px;
+            }
+            .card h2{
+                margin-top: 0;
+                color: #333;
+                font-size: 1.4em;
+            }
+            footer{
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+            }
+            .navbar{
+                color: #b22222;
+                background-color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: bold;
+                cursor: default;
+
+            }
+              .cta-button{
+         cursor: pointer;
+          font-size: 1rem;
+         border: none;
+         background-color: #292728;
+         color: white;
+         padding: 15px 30px;
+         text-decoration: none;
+         font-weight:  bold;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+    
+        }
+    .cta-button:hover{
+     background-color: #6e6a6b;
+    }
+    .buttons {
+        background-color: rgba(231, 231, 231, 0.582);
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                box-shadow: 0 2px 5px rgba(12, 11, 11, 0.295);
+                position: sticky;
+                top: 0;
+                font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            
+            <h1 id="logo_text_2">About Egypt</h1>
+        </div>
+
+        <div class = "buttons">
+                    <a class="cta-button" style="background-color: white;color: #292728;">Egypt</a>
+                    <a href="Kenya.html" class="cta-button">Kenya</a>
+                    <a href="South Africa.html" class="cta-button">South Africa</a>
+                    <a href="Nigeria.html" class="cta-button">Nigeria</a>
+                    <a href="Morocco.html" class="cta-button">Morocco</a>
+                    </div>
+        <div class="intro">
+    <p>Egypt's civilization began when Narmer (also known as Menes) unified Upper and Lower Egypt around 3150 BC, founding the first of many dynasties.The fertile banks of Nile River allowed agriculture to flourish, which supported the rise of an advanced civilization — with monumental architecture, writing (hieroglyphs), and organized society.</p>
+        </div>
+        <div class="section-container">
+        <h2 class="section-title">Top Destinations</h2>
+        </div>
+
+<div class="grid-container">
+        <div class="card">
+           <img src="../images/Pyramids-Giza-Cairo-Egypt.webp" alt="Pyramids Giza Cairo Egypt">
+            <div class="card-content">
+        <h2>1. Visit the Pyramids of Giza</h2>
+            <p>The Pyramids of Giza, along with the Sphinx and a handful of smaller tombs, form one of the most iconic sights in the world.</p>
+            
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../images/182391445-The-Grand-Egyptian-Museum-In-Cairo.jpg" alt="The-Grand-Egyptian-Museum-In-Cairo">
+        <div class="card-content">
+        <h2>2. Explore Historic Cairo</h2>
+            <p>Cairo is the capital of Egypt. It is located on the Nile River, right where the desert transitions into the Nile Delta.</p>
+            
+        </div>
+    </div>
+
+
+    <div class="card">
+        <img src="../images/stanly-bridge-alexandria-city-egypt-harbor-aerial-cruise.jpg" alt="Bridge of Alexandria">
+        <div class="card-content">
+        <h2>3. Visit Alexandria</h2>
+            <p>Located on the Mediterranean Sea, Alexandria is the second largest city in Egypt and a popular tourist destination. You can visit Alexandria on a day trip from Cairo or spend a night or two in the city.</p>
+        </div>
+    </div>
+
+    <div class="card">
+         <img src="../images/Nefertari-Tomb-Valley-of-the-Queens-1129x753.jpg.optimal.jpg" alt="Tomb of Nefertari in the Valley of the Queens">
+        <div class="card-content">
+        <h2>4.  Visit the Tomb of Nefertari in the Valley of the Queens</h2>
+            <p> The Valley of the Queens was the burial site of the wives of the pharaohs. The tombs that you will see here are smaller and lack some of the grandeur of the tombs in the Valley of the Kings, with one big exception.</p>
+            
+        </div>
+    </div>
+
+    <div class="card">
+         <img src="../images/Kiosk-Roman-island-Trajan-Agilkia-Nile-River.webp" alt="Nile River" >
+        <div class="card-content">
+        <h2>5.The Nile River</h2>
+            <p> Drifting on the Nile River, past the ancient tombs and temples, is one of Egypt’s top experiences. Most cruises sail between Aswan and Luxor, with visits to Esna, Edfu, and Kom Ombo along the way.</p>
+            
+    </div>
+</div>
+</div>
+
+    <div class="section-container">
+        <h2 class="section-title">Egyptian Cuisine</h2>
+    </div>
+
+<div class="grid-container">
+        <div class="card">
+            <img src="../images/food_1.webp" alt=Koshari>
+            <div class="card-content">
+        <h2>Koshari</h2>
+            <p>A famous Egyptian street food made with rice, lentils, pasta, chickpeas, crispy fried onions, and a tangy tomato sauce with vinegar.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="../images/foul-mudammas-recipe-8.jpg"alt="Full Medames">
+        <div class="card-content">
+        <h2>Full Medames</h2>
+        <p> Slow-cooked fava beans served with olive oil, lemon juice, cumin, and sometimes eggs or vegetables.</p>
+    </div>
+    </div>
+
+    <div class="card">
+        <img src="../images/food_2.webp" alt="Molokhia">
+        <div class="card-content">
+        <h2>Molokhia</h2>
+        <p>A green soup/stew made from jute leaves, cooked with garlic and coriander, often served with chicken or rabbit and eaten with rice or bread.</p>
+        </div>
+    </div>
+</div>
+    <footer><p>Project: Egypt</p></footer>
+    <script src="../other/js/global.js"></script>
+    </body>
+</html>
