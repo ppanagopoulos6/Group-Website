@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
 var path = window.location.pathname;
-var homeLink = "../../Site/html/continents.html";
+var homeLink = "../html/continents.html";
 
 var btn = document.createElement("a");
 btn.innerText = "<-- Continents"
