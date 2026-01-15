@@ -1,205 +1,70 @@
-<!DOcTYPE html>
-<html>
-    <head>
-        <title>India</title>
-        <style>
-            header {
-                color: rgb(11, 95, 3);
-                padding: 2rem;
-                text-align: center;
-                background-image: url(../images/india/indiaview.jpg) ;
-                background-size: cover;
-                position: relative;
-                height: 80vh;
-                background-position: center;
-            }
-            .fontposition {
-                font-size: 500%;
-            }
-            footer {
-                color: white;
-                padding: 2rem;
-                text-align: center;
-                background-color: rgb(221, 144, 2);
-            }
-            body {
-                margin: 0rem ;
-            }
-            section {
-                text-align: center;
-            }
-            nav {
-                display: flex;
-                position: sticky;
-                justify-content: center;
-                padding: 2rem;
-                gap: 2rem;
-                background: rgb(221, 144, 2);
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.295);
-                font-weight: bold;
-                top: 0;
-            }
-            nav a { 
-                color: rgb(11, 95, 3);
-                font-weight: bold;
-                font-size: x-large;
-            }
-            .card {
-                background-color: white;
-                border-radius: 10px;
-                padding: 1.5rem;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.295);
-            }
-            .cards {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 8rem;
-                padding: 4rem;
-            }
-            .center {
-                text-align: center;
-            }
-            .list {
-                list-style-position: inside;
-                text-align: center;
-            }
-            .padding {
-                padding: 4rem;
-            }
-            .padding {
-                padding: 4rem;
-            }
-            .food{
-                padding: 4rem;
-                text-align: center;
-                left: 50%;
-                gap: 8rem;
-            }
-             .cta-button{
-         cursor: pointer;
-          font-size: 1rem;
-         border: none;
-         background-color: #292728;
-         color: white;
-         padding: 15px 30px;
-         text-decoration: none;
-         font-weight:  bold;
-         border-radius: 5px;
-         transition: background-color 0.3s;
-    
-        }
-    .cta-button:hover{
-     background-color: #6e6a6b;
-    }
-    .buttons {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         gap: 20px;
-         flex-wrap: wrap;
-        }
-        </style>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>India</title>
+    <link rel="stylesheet" href="../other/css/mainStyle.css">
+</head>
+<body>
 
-    <body>
-        
-            <header>
-                <h1 class="fontposition">india</h1>
-            </header>
-            
-            <nav>
-                <a href="#about">about</a>
-                <a href="#cities">cities</a>
-                <a href="#food">food</a>
-                <a href="#tips">tips</a>
-                <div class = "buttons">
-                    <a class="cta-button" style="background-color: white;color: #292728;">India</a>
-                    <a href="thailand.html" class="cta-button">Thailand</a>
-                    <a href="china.html" class="cta-button">China</a>
-                    <a href="jordan.html" class="cta-button">Joran</a>
-                    <a href="japan.html" class="cta-button">japan</a>
-                    </div>
-            </nav>
+<div class="buttons">
+    <a class="cta-button active-button">India</a>
+    <a href="thailand.html" class="cta-button">Thailand</a>
+    <a href="china.html" class="cta-button">China</a>
+    <a href="jordan.html" class="cta-button">Jordan</a>
+    <a href="japan.html" class="cta-button">Japan</a>
+</div>
 
-            <section id="about">
-                <div class="padding">
-                <h2>about india</h2>
-                <p>India is a vast and diverse country full of history, culture, and natural beauty. From the majestic Himalayas in the north to tropical beaches in the south, India offers something for every traveler. Visitors can explore ancient temples, vibrant cities, colorful markets, and UNESCO World Heritage sites like the Taj Mahal. The country is also famous for its flavorful cuisine, lively festivals, and rich traditions, making it an unforgettable destination for adventure and cultural experiences.</p>
-                </div>
-            </section>
+<div class="container">
+    <div class="Title-image" style="background-image:url('../images/indiaview.jpg');">
+       <br><br><br><h1>INDIA</h1>
+    </div>
 
-            <section id="cities">
-                <h2>cities</h2>
-                <div class="cards">
-                    <div class="card">
-                    <h3>delhi</h3>
-                    <p>Delhi is India’s capital and a city of contrasts, where ancient history meets modern life. Tourists can explore landmarks like the Red Fort, Qutub Minar, and India Gate, enjoy diverse street food, and experience bustling markets and cultural sites.</p>
-                    <img src="../images/delhi.jpg" alt="Delhi">
-                    </div>
-                    <div class="card">
-                    <h3>jaipur</h3>
-                    <p>Jaipur is the capital of Rajasthan and part of the famous Golden Triangle. Known as the “Pink City,” it attracts tourists with its grand palaces, forts like Amber Fort, colorful bazaars, and royal heritage.</p>
-                    <img src="../images/Jaipur.jpg" alt="Jaipur">
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                    <h3>agra</h3>
-                    <p>Agra is best known as the home of the world-famous Taj Mahal, one of the Seven Wonders of the World. Visitors also enjoy Agra Fort and the city’s rich Mughal history, making it a must-visit destination for history and architecture lovers.</p>
-                    <img src="../images/agra.jpg" alt="Agra">
-                    </div>
-                    <div class="card">
-                    <h3>mumbai</h3>
-                    <p>Mumbai is India’s largest city and the heart of its film industry, Bollywood. Tourists come to see landmarks like the Gateway of India, relax along Marine Drive, explore lively markets, and experience the city’s fast-paced energy and coastal charm.</p>
-                    <img src="../images/mumbai.jpg" alt="Mumbai">
-                    </div>
-                </div>
-            </section>
+    <h2 class="history">About India</h2>
+    <p>India is a vast and diverse country full of history, culture, and natural beauty. From the majestic Himalayas in the north to tropical beaches in the south, India offers something for every traveler. Visitors can explore ancient temples, vibrant cities, colorful markets, and UNESCO World Heritage sites like the Taj Mahal.</p>
 
-            <section class="padding">
-                <h2>taj mahal</h2>
-                <p>The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan , to house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</p>
-                <img src="../images/Taj_Mahal.jpeg" alt="taj mahal">
-                <p>The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Islamic art in India and one of the universally admired masterpieces of the world's heritage". It is regarded as one of the best examples of Mughal architecture and a symbol of Indian history. The Taj Mahal is a major tourist attraction and attracts more than five million visitors a year. In 2007, it was declared a winner of the New 7 Wonders of the World initiative. The Taj Mahal and its setting, surrounding grounds, and structures are a Monument of National Importance, administered by the Archaeological Survey of India.</p>
-            </section>
+    <h2 class="places-title">Famous Cities</h2>
 
-            <section id="food">
-                <div class="food">
-                <h2>you must taste</h2>
-                <table>
-                    <tr>
-                    <td><div class="food"><img src="../images/Butter-Chicken.jpg" alt="Butter-Chicken"></div></td>
-                    <td><div class="food"><ul class="list">
-                        <li>Butter Chicken – A rich and creamy tomato-based chicken curry, perfect with naan or rice.</li>
-                        <li>Biryani – A fragrant spiced rice dish cooked with meat or vegetables, often served with yogurt or raita.</li>
-                        <li>Samosa – Deep-fried pastry pockets filled with spiced potatoes, peas, or meat, commonly enjoyed as a snack.</li>
-                        <li>Masala Dosa – A crispy rice and lentil crepe filled with spiced potato, usually served with coconut chutney and sambar.</li>
-                        <li>Chole Bhature – Spicy chickpea curry served with soft, deep-fried bread, a popular North Indian breakfast or brunch.</li>
-                        <li>Paneer Tikka – Marinated cubes of Indian cottage cheese grilled to perfection, often served as a starter with mint chutney.</li>
-                    </ul></div></td>
-                    <td><div class="food"><img src="../images/Chicken-Biryani.jpg" alt="Chicken-Biryani"></td></div>
-                    </tr>
-                </table>
-                </div>
-            </section>
+    <h3>Delhi</h3>
+    <img src="../images/delhi.jpg" alt="Delhi">
+    <p>Delhi is India’s capital and a city of contrasts, where ancient history meets modern life. Tourists can explore landmarks like the Red Fort, Qutub Minar, and India Gate.</p>
 
-            <section id="tips">
-                <h2>tips</h2>
-                <ul class="list">
-                    <li>Carry cash and small change – Many markets and small vendors don’t take cards.</li>
-                    <li>Dress modestly – Cover shoulders and knees, especially at temples and religious sites.</li>
-                    <li>Stay hydrated and eat safely – Drink bottled water and choose busy, clean restaurants.</li>
-                    <li>Use reliable transport – Prepaid taxis, ride-hailing apps, and trains are safest.</li>
-                    <li>Keep your belongings secure – Watch out for pickpockets in crowded areas.</li>
-                    <li>Plan extra travel time – Roads can be crowded, and distances often take longer than expected.</li>
-                    <li>Be open and patient – India is vibrant, busy, and full of surprises!</li>
-                </ul>
-            </section>
+    <h3>Jaipur</h3>
+    <img src="../images/Jaipur.jpg" alt="Jaipur">
+    <p>Jaipur is the capital of Rajasthan and part of the famous Golden Triangle. Known as the “Pink City,” it attracts tourists with its grand palaces and forts.</p>
 
-            <footer>
-                <p>india tourist guide</p>
-            </footer>
-            <script src="../other/js/global.js"></script>
-    </body>
+    <h3>Agra</h3>
+    <img src="../images/agra.jpg" alt="Agra">
+    <p>Agra is best known as the home of the world-famous Taj Mahal, one of the Seven Wonders of the World. Visitors also enjoy Agra Fort and the city’s rich Mughal history.</p>
+
+    <h3>Mumbai</h3>
+    <img src="../images/mumbai.jpg" alt="Mumbai">
+    <p>Mumbai is India’s largest city and the heart of its film industry, Bollywood. Tourists come to see landmarks like the Gateway of India and relax along Marine Drive.</p>
+
+    <h3>The Taj Mahal</h3>
+    <img src="../images/Taj_Mahal.jpeg" alt="Taj Mahal">
+    <p>The Taj Mahal is an ivory-white marble mausoleum commissioned in 1631 by the emperor Shah Jahan. It is regarded as one of the best examples of Mughal architecture.</p>
+
+    <h2 class="food">Must Taste</h2>
+    <img src="../images/Butter-Chicken.jpg" alt="Butter Chicken">
+    <ul>
+        <li><strong>Butter Chicken:</strong> A rich and creamy tomato-based chicken curry, perfect with naan or rice.</li>
+        <li><strong>Biryani:</strong> A fragrant spiced rice dish cooked with meat or vegetables, often served with yogurt.</li>
+        <li><strong>Samosa:</strong> Deep-fried pastry pockets filled with spiced potatoes, peas, or meat.</li>
+        <li><strong>Masala Dosa:</strong> A crispy rice and lentil crepe filled with spiced potato.</li>
+        <li><strong>Paneer Tikka:</strong> Marinated cubes of Indian cottage cheese grilled to perfection.</li>
+    </ul>
+
+    <h2 class="places-title">Tips for Travelers</h2>
+    <ul>
+        <li>Carry cash and small change – Many markets and small vendors don’t take cards.</li>
+        <li>Dress modestly – Cover shoulders and knees, especially at temples.</li>
+        <li>Stay hydrated – Drink bottled water and choose clean restaurants.</li>
+        <li>Use reliable transport – Prepaid taxis and ride-hailing apps are safest.</li>
+    </ul>
+
+</div> 
+<footer>India Tourist Guide</footer>
+<script src="../other/js/global.js"></script>
+</body>
 </html>
-

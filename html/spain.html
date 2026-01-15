@@ -3,133 +3,16 @@
     <meta charset="UTF-8">
     <title>Welcome to Spain</title>
 
+    <link rel="stylesheet" href="../other/css/mainStyle.css">
     <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: #cacacada;
-            color: #333333f5;
-            text-align: center;
-            line-height: 1.6;
-            }
-
-        .container 
-        {
-            max-width: 1000px;
-            margin: auto;
-            background-color:white;
-            padding: 10px;
-        }
-        h1 
-        {
-            color: rgb(255, 217, 0);
-            letter-spacing: 5px;
-            font-size: 60px;
-            text-align: center;
-            
-        }
-
-        h2 
-        {
-            margin-top: 40px;
-        }
-
-        .history 
-        {
-            background-color: rgb(255, 0, 0);
-            color: white;
-            padding: 12px;
-            border-radius: 6px;
-        }
-
-        .places-title 
-        {
-            background-color: rgb(255, 217, 0);
+    .history, .places-title, .food {
+            background-color: rgb(255, 128, 0);
             color: white;
             padding: 12px;
             border-radius: 6px;
             margin-top: 50px;
         }
-
-        img 
-        {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        ol 
-        {
-            text-align: left;
-            font-size: 18px;
-            margin: 20px auto;
-            max-width: 800px;
-        }
-
-        ol li {
-            margin-bottom: 15px;
-        }
-
-        p 
-        {
-            font-size: 18px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        footer 
-        {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #eee;
-            font-size: 14px;
-        }
-        .food
-        {
-            background-color: rgb(255, 0, 0);
-            color: white;
-             padding: 12px;
-            border-radius: 6px;
-        }
-        .Title-image
-        {
-            width: 950;
-            height: 350;
-            border: 4px solid black;
-            background-image:url('../images/SpainCity.jpg') ;
-            background-size: cover;
-            background-position: center;
-        
-        }
-        .cta-button{
-         cursor: pointer;
-          font-size: 1rem;
-         border: none;
-         background-color: #292728;
-         color: white;
-         padding: 15px 30px;
-         text-decoration: none;
-         font-weight:  bold;
-         border-radius: 5px;
-         transition: background-color 0.3s;
-    
-        }
-    .cta-button:hover{
-     background-color: #6e6a6b;
-    }
-    .buttons {
-        background-color: rgba(231, 231, 231, 0.582);
-                padding: 1rem;
-                display: flex;
-                justify-content: center;
-                gap: 1.5rem;
-                box-shadow: 0 2px 5px rgba(12, 11, 11, 0.295);
-                position: sticky;
-                top: 0;
-                font-weight: bold;
-        }
-        </style>
+</style>
         </head>
         <body>
               <div class = "buttons">
@@ -140,11 +23,13 @@
                     <a href="germany.html" class="cta-button">Germany</a>
                 </div>
             <div class="container">
-                <div class="Title-image">
+                <div class="Title-image" style="background-image:url('../images/SpainCity.jpg')">
                     <br> <br> <h1>Spain </h1>
+                    
                 </div>
                 <h2 class="history">
                     Spain through the Ages
+                    
                 </h2>
                 <ol>
                     <li><strong>Prehistoric & Ancient Spain:</strong>Early settlements and Iberian tribes, later influenced by Phoenicians and Greeks.</li>

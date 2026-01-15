@@ -1,223 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-        <title>Discover South Africa</title>
-        <style>
-            body{
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f4f4;
-                color: #333;
-                line-height: 1.6;
-            }
-            .header{
-                background-color: #b22222;
-                color: white;
-                padding: 40px 20px;
-                text-align: center;
-                box-shadow: 0 4px 6px rgb(0, 0, 0,0.1);
-            }
-            .header h1{
-                margin: 0;
-                font-size: 3em;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-            }
-            .intro{
-                max-width: 800px;
-                margin: 30px auto;
-                padding: 20px;
-                background: white;
-                border-radius: 8px;
-                box-shadow: 0 4px 6px rgb(0, 0, 0,0.1);
-                text-align: center;
-            }
-            .section title{
-                text-align: center;
-                color: #006400;
-                font-size: 2em;
-                margin-top: 50px;
-                margin-bottom: 20px;
-                text-transform: uppercase;
-                border-bottom: 3px solid #b22222;
-                display: inline-block;
-                padding-bottom: 10px;
-            }
-            .section-container{
-                text-align: center;
-            }
-            .grid-container{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 20px;
-                max-width: 1200px;
-                margin: 0 auto 50px auto;
-                padding: 0 20px;
-            }
-            .card{
-                background: white;
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                transition: transform 0.3s ease;
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .card img{
-                width: 100%;
-                height: 200px;
-                object-fit: cover; 
-            }
-            .card-content{
-                padding: 20px;
-            }
-            .card h2{
-                margin-top: 0;
-                color: #333;
-                font-size: 1.4em;
-            }
-            footer{
-                background-color: #333;
-                color: white;
-                text-align: center;
-                padding: 20px;
-                margin-top: 40px;
-            }
-            .navbar{
-                color: #b22222;
-                background-color: white;
-                padding: 5px 10px;
-                border-radius: 4px;
-                font-style: normal;
-                font-weight: bold;
-                cursor: default;
+    <meta charset="UTF-8">
+    <title>Discover South Africa</title>
+    <link rel="stylesheet" href="../other/css/mainStyle.css">
+</head>
+<body>
 
-            }
-              .cta-button{
-         cursor: pointer;
-          font-size: 1rem;
-         border: none;
-         background-color: #292728;
-         color: white;
-         padding: 15px 30px;
-         text-decoration: none;
-         font-weight:  bold;
-         border-radius: 5px;
-         transition: background-color 0.3s;
-    
-        }
-    .cta-button:hover{
-     background-color: #6e6a6b;
-    }
-    .buttons {
-        background-color: rgba(231, 231, 231, 0.582);
-                padding: 1rem;
-                display: flex;
-                justify-content: center;
-                gap: 1.5rem;
-                box-shadow: 0 2px 5px rgba(12, 11, 11, 0.295);
-                position: sticky;
-                top: 0;
-                font-weight: bold;
-        }
-        </style>
-    </head>
-    <body>
-
-        <div class="header">
-            
-            <h1 id="logo_text_2">About South Africa </h1>
-        </div>
-
-        <div class = "buttons">
-                    <a href="Egypt.html" class="cta-button">Egypt</a>
-                    <a href="Kenya.html" class="cta-button">Kenya</a>
-                    <a class="cta-button" style="background-color: white;color: #292728;">South Africa</a>
-                    <a href="Nigeria.html" class="cta-button">Nigeria</a>
-                    <a href="Morocco.html" class="cta-button">Morocco</a>
-                    </div>
-        <div class="intro">
-             <p>South Africa is a fascinating country located at the southern tip of Africa and is known for its incredible diversity. It has a rich and complex history, a wide variety of cultures, and some of the most beautiful natural landscapes in the world. Tourists can experience modern cities, traditional villages, stunning beaches, mountains, and vast wildlife reserves all in one country.</p>
-        </div>
-        <div class="section-container">
-        <h2 class="section-title">Top Destinations</h2>
-        </div>
-
-<div class="grid-container">
-        <div class="card">
-           <img src="../images/cape-town.jpg" alt="Cape Town">
-            <div class="card-content">
-        <h2>1. Cape Town</h2>
-            <p>Cape Town is one of the most beautiful cities in the world and a top tourist destination in South Africa. It is famous for Table Mountain, which offers amazing views of the city and the ocean. Visitors can enjoy beautiful beaches, explore historic neighborhoods, and visit places like Robben Island, where Nelson Mandela was imprisoned. The city combines nature, history, and modern life in a unique way.</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../images/kruger-national-park.jpg" alt="kruger national park">
-        <div class="card-content">
-        <h2>2. Kruger National Park</h2>
-            <p> Kruger National Park is one of the largest and most famous wildlife parks in Africa. It is the perfect place for tourists who want to experience a real African safari. Visitors can see the “Big Five” animals: lion, elephant, buffalo, leopard, and rhino. The park is very important for wildlife protection and offers unforgettable experiences in nature.</p>
-        </div>
-    </div>
-
-
-    <div class="card">
-        <img src="../images/jo1631428.jpg" alt="Johannesburg">
-        <div class="card-content">
-        <h2>3. Johannesburg</h2>
-           <p>Johannesburg is the largest city in South Africa and the economic heart of the country. It has a deep and important history, especially related to apartheid. Tourists can visit the Apartheid Museum and Soweto to learn about the struggle for freedom and equality. Today, Johannesburg is a modern city with shopping centers, restaurants, and a lively cultural scene.</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../images/AdobeStock_211260384.webp" alt="Garden Route">
-        <div class="card-content">
-        <h2>4. The Garden Route</h2>
-            <p> The Garden Route is a famous scenic route along the southern coast of South Africa. It is known for its beautiful landscapes, including forests, mountains, lakes, and beaches. Visitors can go hiking, whale watching, or explore small towns along the way. It is an excellent destination for nature lovers and road-trip adventures.</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="../images/GettyImages-98812457-59086eac3df78c92830197e5.jpg" alt="Durban">
-        <div class="card-content">
-        <h2>5. Durban</h2>
-            <p> Durban is a coastal city located on the east coast of South Africa. It is known for its warm climate, long beaches, and relaxed atmosphere. The city has a strong Indian influence, which can be seen in its culture and food. Tourists often visit Durban to swim, surf, and enjoy traditional dishes like curry and Bunny Chow.</p>
-        </div>
-    </div>
+<div class="buttons">
+    <a href="Egypt.html" class="cta-button">Egypt</a>
+    <a href="Kenya.html" class="cta-button">Kenya</a>
+    <a class="cta-button active-button">South Africa</a>
+    <a href="Nigeria.html" class="cta-button">Nigeria</a>
+    <a href="Morocco.html" class="cta-button">Morocco</a>
 </div>
 
-    <div class="section-container">
-        <h2 class="section-title">South Africa Cuisine</h2>
+<div class="container">
+    <div class="Title-image" style="background-image:url('../images/cape-town.jpg');">
+       <br><br><br><h1>SOUTH AFRICA</h1>
     </div>
 
-<div class="grid-container">
-        <div class="card">
-            <img src="../images/Bobotie-at-TasteOfThePlace.com-IG-1024x1024.jpg"  alt="Jollof Rice">
-            <div class="card-content">
-        <h2>Bobotie</h2>
-        <p>Bobotie is a traditional South African dish made with minced meat, spices, and dried fruit. It is baked with an egg-based topping and has a sweet and savory flavor. Bobotie is often served with rice and vegetables.</p>
-        </div>
-    </div>
+    <h2 class="history">About South Africa</h2>
+    <p>South Africa is a fascinating country located at the southern tip of Africa known for its diversity. Tourists can experience modern cities, traditional villages, beaches, mountains, and wildlife.</p>
 
-    <div class="card">
-       <img src="../images/OIP (1).webp"alt="Biltong">
-        <div class="card-content">
-        <h2>Biltong</h2>
-            <p>Biltong is a popular South African snack made from dried and cured meat, usually beef. It is seasoned with spices and vinegar and is very popular with locals and tourists. People often eat it as a snack while traveling.</p>
-        </div>
-    </div>
+    <h2 class="places-title">Top Destinations</h2>
 
-    <div class="card">
-        <img src="../images/Braai-meat.jpeg.jpg.optimal.jpg" alt="Braai">
-        <div class="card-content">
-        <h2>Braai</h2>
-            <p>Braai is more than just food in South Africa; it is a social tradition. It is a type of barbecue where people cook meat over an open fire. Friends and family gather together, making it an important part of South African culture.</p>
-        </div>
-    </div>
-</div>
-    <footer> <p>Project: South Africa</p></footer>
-    <script src="../other/js/global.js"></script>
+    <h3>1. Cape Town</h3>
+    <img src="../images/cape-town.jpg" alt="Cape Town">
+    <p>Famous for Table Mountain and beautiful beaches. It combines nature, history, and modern life in a unique way.</p>
+
+    <h3>2. Kruger National Park</h3>
+    <img src="../images/kruger-national-park.jpg" alt="Kruger National Park">
+    <p>One of the most famous wildlife parks in Africa, perfect for seeing the “Big Five” animals on safari.</p>
+
+    <h3>3. Johannesburg</h3>
+    <img src="../images/jo1631428.jpg" alt="Johannesburg">
+    <p>The economic heart of the country with a deep history. Visitors can explore the Apartheid Museum and Soweto.</p>
+
+    <h3>4. The Garden Route</h3>
+    <img src="../images/AdobeStock_211260384.webp" alt="Garden Route">
+    <p>A famous scenic route along the southern coast known for forests, mountains, lakes, and beaches.</p>
+
+    <h3>5. Durban</h3>
+    <img src="../images/GettyImages-98812457-59086eac3df78c92830197e5.jpg" alt="Durban">
+    <p>A coastal city with a warm climate and strong Indian influence, perfect for surfing and trying traditional curry.</p>
+
+    <h2 class="food">South African Cuisine</h2>
+
+    <h3>Bobotie</h3>
+    <img src="../images/Bobotie-at-TasteOfThePlace.com-IG-1024x1024.jpg" alt="Bobotie">
+    <p>Minced meat baked with an egg-based topping, featuring sweet and savory flavors.</p>
+
+    <h3>Biltong</h3>
+    <img src="../images/OIP (1).webp" alt="Biltong">
+    <p>A popular snack made from dried and cured meat, seasoned with spices.</p>
+
+    <h3>Braai</h3>
+    <img src="../images/Braai-meat.jpeg.jpg.optimal.jpg" alt="Braai">
+    <p>A social tradition of cooking meat over an open fire, bringing friends and family together.</p>
+
+</div> 
+<footer>Project: South Africa</footer>
+<script src="../other/js/global.js"></script>
 </body>
 </html>

@@ -1,193 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Thailand</title>
-        <style>
-            header {
-                color: white;
-                padding: 2rem;
-                text-align: center;
-                background: linear-gradient(to bottom, #a50909 0%, #171766 100%);
-            }
-            footer {
-                color: white;
-                padding: 2rem;
-                text-align: center;
-                background: linear-gradient(to top, #a50909 0%, #171766 100%);
-            }
-            body {
-                margin: 0rem ;
-            }
-            section {
-                text-align: center;
-            }
-            nav {
-                display: flex;
-                position: sticky;
-                justify-content: center;
-                padding: 4rem;
-                gap: 2rem;
-                background: linear-gradient(to top, #a50909 0%, #171766 100%);
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.295);
-                font-weight: bold;
-                top: 0;
-            }
-            nav a {
-                color: white;
-                font-weight: bold;
-                font-size: x-large;
-            }
-            .card {
-                background-color: white;
-                border-radius: 10px;
-                padding: 1.5rem;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.295);
-            }
-            .cards {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 8rem;
-                padding: 4rem;
-            }
-            .center {
-                text-align: center;
-            }
-            .list {
-                list-style-position: inside;
-                text-align: center;
-            }
-            .padding {
-                padding: 4rem;
-            }
-             .cta-button{
-         cursor: pointer;
-          font-size: 1rem;
-         border: none;
-         background-color: #292728;
-         color: white;
-         padding: 15px 30px;
-         text-decoration: none;
-         font-weight:  bold;
-         border-radius: 5px;
-         transition: background-color 0.3s;
-    
-        }
-    .cta-button:hover{
-     background-color: #6e6a6b;
-    }
-    .buttons {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         gap: 20px;
-         flex-wrap: wrap;
-        }
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thailand</title>
+    <link rel="stylesheet" href="../other/css/mainStyle.css">
+</head>
+<body>
 
-        <body>
+<div class="buttons">
+    <a href="india.html" class="cta-button">India</a>
+    <a class="cta-button active-button">Thailand</a>
+    <a href="china.html" class="cta-button">China</a>
+    <a href="jordan.html" class="cta-button">Joran</a>
+    <a href="japan.html" class="cta-button">japan</a>
+</div>
 
-            <header>
-                <h1>Thailand</h1>
-            </header>
-            
-            <nav>
-                <a href="#about">About</a>
-                <a href="#cities">Cities</a>
-                <a href="#food">Food</a>
-                <a href="#tips">Tips</a>
-                  <div class = "buttons">
-                    <a href="india.html" class="cta-button">India</a>
-                    <a class="cta-button" style="background-color: white;color: #292728;">Thailand</a>
-                    <a href="china.html" class="cta-button">China</a>
-                    <a href="jordan.html" class="cta-button">Joran</a>
-                    <a href="japan.html" class="cta-button">japan</a>
-                    </div>
-            </nav>
+<div class="container">
+    <div class="Title-image" style="background-image:url('../images/Bangkok.jpg');">
+       <br><br><br><h1>Thailand</h1>
+    </div>
 
-            <section id="about">
-              
-                <h2>About Thailand</h2>
-                <p>Thailand is known as the “Land of Smiles”, famous for its warm hospitality, beautiful beaches, rich culture, and delicious food. It offers a mix of modern cities, ancient temples, tropical islands, and natural landscapes.</p>
-            </section>
+    <h2 class="history">About Thailand</h2>
+    <p>Thailand is known as the “Land of Smiles”, famous for its warm hospitality, beautiful beaches, rich culture, and delicious food. It offers a mix of modern cities, ancient temples, tropical islands, and natural landscapes.</p>
 
-            <section id="cities">
-                <h2>You must visit</h2>
-                <div class="cards">
-                    <div class="card">
-                    <h3>Bangok</h3>
-                    <p>Bangkok is Thailand’s vibrant capital, known for its mix of modern skyscrapers and historic temples. Tourists can visit famous sites like the Grand Palace and Wat Arun, enjoy shopping at large malls and floating markets, and experience lively street food and nightlife.</p>
-                    <img src="../images/Bangkok.jpg" alt="Bangok">
-                    </div>
-                    <div class="card">
-                    <h3>Chiang Mai</h3>
-                    <p>Chiang Mai is a charming city in northern Thailand surrounded by mountains. It is popular for its ancient temples, night markets, traditional culture, and outdoor activities such as hiking and visiting elephant sanctuaries.</p>
-                    <img src="../images/chinag-mai.jpg" alt="Chiang Mai">
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                    <h3>Phuket</h3>
-                    <p>Phuket is Thailand’s largest island and a top beach destination. Visitors come for its beautiful beaches, clear waters, island-hopping tours, and vibrant nightlife, making it ideal for both relaxation and adventure.</p>
-                    <img src="../images/phuket.jpg" alt="Phuket">
-                    </div>
-                    <div class="card">
-                    <h3>Krabi</h3>
-                    <p>Krabi is a stunning coastal city in southern Thailand, famous for its dramatic limestone cliffs, turquoise waters, and relaxed island atmosphere. Tourists visit Krabi for its beautiful beaches like Railay, crystal-clear islands, snorkeling and kayaking, and breathtaking sunsets, making it a perfect destination for nature lovers and beach enthusiasts.</p>
-                    <img src="../images/krabi.jpg" alt="Krabi">
-                    </div>
-                </div>
-            </section>
+    <h2 class="places-title">You must visit</h2>
 
-            <section>
-                <h2>Ayutthaya</h2>
-                <img src="../images/ayutthaya.avif" alt="ayutthaya">
-                <p class="padding">Ayutthaya is a must-visit destination for tourists interested in history and culture. Located just north of Bangkok, this UNESCO World Heritage Site was Thailand’s former capital from 1350 to 1767 and is filled with impressive ruins of ancient temples, palaces, and monasteries. Visitors can explore iconic sites like Wat Mahathat, famous for the Buddha head entwined in tree roots, and enjoy scenic views along the rivers that once earned Ayutthaya the nickname “Venice of Asia.” Today, it’s a popular day trip where travelers can experience Thailand’s rich past, take boat tours, and taste local specialties such as river prawns and boat noodles.</p>
-            </section>
+    <h3>Bangok</h3>
+    <img src="../images/Bangkok.jpg" alt="Bangok">
+    <p>Bangkok is Thailand’s vibrant capital, known for its mix of modern skyscrapers and historic temples. Tourists can visit famous sites like the Grand Palace and Wat Arun, enjoy shopping at large malls and floating markets, and experience lively street food and nightlife.</p>
 
-            <section id="food">
-                <h2>You must taste</h2>
-                <div class="cards">
-                    <div class="card">
-                    <h3>Pad Thai</h3>
-                    <p>Pad Thai is a famous Thai stir-fried rice noodle dish commonly enjoyed as street food across Thailand. It is typically made with rice noodles, shrimp, scrambled eggs, bean sprouts, green onions, peanuts, and a balance of sweet and savory flavors. All the ingredients are quickly fried together in a hot wok, creating a flavorful and iconic dish that many visitors try during their trip.</p>
-                    <img src="../images/Chicken-Pad-Thai.jpg" alt="Chicken-Pad-Thai">
-                    </div>
-                    <div class="card">
-                    <h3>Tom Yum Kung</h3>
-                    <p>Tom Yum Kung is a famous Thai spicy and sour shrimp soup made with many of Thailand’s signature herbs and seasonings. It is known for its bold flavors, often enhanced with chili paste and a splash of lime juice. The soup is commonly enjoyed with a side of steamed rice, making it a popular and flavorful dish for both locals and visitors.</p>
-                    <img src="../images/tom-yum-goong.jpg" alt="tom-yum-goong">
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                    <h3>Khao Pad</h3>
-                    <p>Thai fried rice, known as Khao Pad, is a popular dish from central Thai cuisine. In Thai, khao means “rice” and pad means “stir-fried.” It is typically made by stir-frying rice with eggs, vegetables, and meat or seafood, creating a simple yet flavorful meal enjoyed throughout Thailand.</p>
-                    <img src="../images/khao-pad.jpg" alt="Khao Pad">
-                    </div>
-                    <div class="card">
-                    <h3>Thai Coconut Ice Cream</h3>
-                    <p>Thai coconut ice cream is a popular traditional dessert in Thailand, especially enjoyed as street food in hot weather. It is made from coconut milk, giving it a rich yet refreshing flavor, and is often served in a coconut shell. The ice cream is commonly topped with ingredients such as roasted peanuts, sweet corn, sticky rice, or palm sugar syrup, making it a must-try treat for visitors looking to cool down while exploring Thailand.</p>
-                    <img src="../images/Coconut-Ice-Cream.jpg" alt="Thai Coconut Ice Cream">
-                    </div>
-                </div>
-            </section>
+    <h3>Chiang Mai</h3>
+    <img src="../images/chinag-mai.jpg" alt="Chiang Mai">
+    <p>Chiang Mai is a charming city in northern Thailand surrounded by mountains. It is popular for its ancient temples, night markets, traditional culture, and outdoor activities such as hiking and visiting elephant sanctuaries.</p>
 
-            <section id="tips">
-                <h2>Tips</h2>
-                <ul class="list">
-                    <li>Dress modestly at temples – Cover shoulders and knees.</li>
-                    <li>Use cash for street food and markets – Small vendors rarely accept cards.</li>
-                    <li>Stay hydrated – Thailand is hot and humid most of the year.</li>
-                    <li>Bargain politely at markets – Keep it friendly and respectful.</li>
-                    <li>Use sunscreen and mosquito repellent – Especially in beach and jungle areas.</li>
-                    <li>Respect the royal family – It is taken very seriously in Thailand.</li>
-                </ul>
-            </section>
+    <h3>Phuket</h3>
+    <img src="../images/phuket.jpg" alt="Phuket">
+    <p>Phuket is Thailand’s largest island and a top beach destination. Visitors come for its beautiful beaches, clear waters, island-hopping tours, and vibrant nightlife, making it ideal for both relaxation and adventure.</p>
 
-            <footer>
-                <p>Thailand Tourist Guide</p>
-            </footer>
-            <script src="../other/js/global.js"></script>
-        </body>
+    <h3>Krabi</h3>
+    <img src="../images/krabi.jpg" alt="Krabi">
+    <p>Krabi is a stunning coastal city in southern Thailand, famous for its dramatic limestone cliffs, turquoise waters, and relaxed island atmosphere. Tourists visit Krabi for its beautiful beaches like Railay, crystal-clear islands, snorkeling and kayaking, and breathtaking sunsets, making it a perfect destination for nature lovers and beach enthusiasts.</p>
+
+    <h3>Ayutthaya</h3>
+    <img src="../images/ayutthaya.avif" alt="ayutthaya">
+    <p>Ayutthaya is a must-visit destination for tourists interested in history and culture. Located just north of Bangkok, this UNESCO World Heritage Site was Thailand’s former capital from 1350 to 1767 and is filled with impressive ruins of ancient temples, palaces, and monasteries. Visitors can explore iconic sites like Wat Mahathat, famous for the Buddha head entwined in tree roots, and enjoy scenic views along the rivers that once earned Ayutthaya the nickname “Venice of Asia.” Today, it’s a popular day trip where travelers can experience Thailand’s rich past, take boat tours, and taste local specialties such as river prawns and boat noodles.</p>
+
+    <h2 class="food">You must taste</h2>
+
+    <h3>Pad Thai</h3>
+    <img src="../images/Chicken-Pad-Thai.jpg" alt="Chicken-Pad-Thai">
+    <p>Pad Thai is a famous Thai stir-fried rice noodle dish commonly enjoyed as street food across Thailand. It is typically made with rice noodles, shrimp, scrambled eggs, bean sprouts, green onions, peanuts, and a balance of sweet and savory flavors. All the ingredients are quickly fried together in a hot wok, creating a flavorful and iconic dish that many visitors try during their trip.</p>
+
+    <h3>Tom Yum Kung</h3>
+    <img src="../images/tom-yum-goong.jpg" alt="tom-yum-goong">
+    <p>Tom Yum Kung is a famous Thai spicy and sour shrimp soup made with many of Thailand’s signature herbs and seasonings. It is known for its bold flavors, often enhanced with chili paste and a splash of lime juice. The soup is commonly enjoyed with a side of steamed rice, making it a popular and flavorful dish for both locals and visitors.</p>
+
+    <h3>Khao Pad</h3>
+    <img src="../images/khao-pad.jpg" alt="Khao Pad">
+    <p>Thai fried rice, known as Khao Pad, is a popular dish from central Thai cuisine. In Thai, khao means “rice” and pad means “stir-fried.” It is typically made by stir-frying rice with eggs, vegetables, and meat or seafood, creating a simple yet flavorful meal enjoyed throughout Thailand.</p>
+
+    <h3>Thai Coconut Ice Cream</h3>
+    <img src="../images/Coconut-Ice-Cream.jpg" alt="Thai Coconut Ice Cream">
+    <p>Thai coconut ice cream is a popular traditional dessert in Thailand, especially enjoyed as street food in hot weather. It is made from coconut milk, giving it a rich yet refreshing flavor, and is often served in a coconut shell. The ice cream is commonly topped with ingredients such as roasted peanuts, sweet corn, sticky rice, or palm sugar syrup, making it a must-try treat for visitors looking to cool down while exploring Thailand.</p>
+
+    <h2 class="places-title">Tips</h2>
+    <ul class="list">
+        <li>Dress modestly at temples – Cover shoulders and knees.</li>
+        <li>Use cash for street food and markets – Small vendors rarely accept cards.</li>
+        <li>Stay hydrated – Thailand is hot and humid most of the year.</li>
+        <li>Bargain politely at markets – Keep it friendly and respectful.</li>
+        <li>Use sunscreen and mosquito repellent – Especially in beach and jungle areas.</li>
+        <li>Respect the royal family – It is taken very seriously in Thailand.</li>
+    </ul>
+
+</div> 
+<footer>Thailand Tourist Guide</footer>
+<script src="../other/js/global.js"></script>
+</body>
 </html>

@@ -1,199 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>China</title>
-        <style>
-            header {
-                background-color: red;
-                text-align: center;
-                padding: 3rem;
-            }
-            footer {
-                background-color: red;
-                text-align: center;
-                padding: 2rem;
-            }
-            .container {
-                position: relative;
-                text-align: center;
-                color: white;
-            }
-            .centered {
-                position: absolute;
-                top: 40%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 2000%;
-                color: red;
-                font-weight: bold;
-            }
-            body {
-                margin: 0rem ;
-            }
-                  
-            section {
-                padding: 3rem 2rem;
-                max-width: 1100px;
-                margin: auto;
-            }
-            nav {
-                background-color: red;
-                padding: 1rem;
-                display: flex;
-                justify-content: center;
-                gap: 1.5rem;
-                box-shadow: 0 2px 5px rgba(12, 11, 11, 0.295);
-                position: sticky;
-                top: 0;
-                font-weight: bold;
-            }
-            nav a {
-                color: black;
-                font-weight: bold;
-                font-size: x-large;
-            }
-            .left {
-                float: left;
-            }
-            h3 {
-                text-align: center;
-            }
-            .image {
-                text-align: center;
-            }
-             .cta-button{
-         cursor: pointer;
-          font-size: 1rem;
-         border: none;
-         background-color: #292728;
-         color: white;
-         padding: 15px 30px;
-         text-decoration: none;
-         font-weight:  bold;
-         border-radius: 5px;
-         transition: background-color 0.3s;
-    
-        }
-    .cta-button:hover{
-     background-color: #6e6a6b;
-    }
-    .buttons {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         gap: 20px;
-         flex-wrap: wrap;
-        }
-        </style>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>China</title>
+    <link rel="stylesheet" href="../other/css/mainStyle.css">
+</head>
+<body>
 
-        <body>
+<div class="buttons">
+    <a href="india.html" class="cta-button">India</a>
+    <a href="thailand.html" class="cta-button">Thailand</a>
+    <a class="cta-button active-button">China</a>
+    <a href="jordan.html" class="cta-button">Jordan</a>
+    <a href="japan.html" class="cta-button">Japan</a>
+</div>
 
-        <header>
-            <div class="container">
-            <img src="../images/TheForbiddenCityView.jpg" alt="The Forbiden City">
-            <div class="centered" >CHINA</div>
-            </div>
-        </header>
+<div class="container">
+    <div class="Title-image" style="background-image:url('../images/TheForbiddenCityView.jpg');">
+       <br><br><br><h1>CHINA</h1>
+    </div>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#cities">Cities</a>
-            <a href="#sites">Sites</a>
-            <a href="#food">Food</a>
-            <a href="#tips">Tips</a>
-             <div class = "buttons">
-                    <a href="india.html" class="cta-button">India</a>
-                    <a href="thailand.html" class="cta-button">Thailand</a>
-                    <a class="cta-button" style="background-color: white;color: #292728;">China</a>
-                    <a href="jordan.html" class="cta-button">Joran</a>
-                    <a href="japan.html" class="cta-button">japan</a>
-                    </div>
-        </nav>
-            
-        <section id="about">
-           
-            <h2>About China</h2>
-            <p>China has one of the world’s oldest continuous histories, dating back over 5,000 years. It was shaped by powerful dynasties, great inventions like paper and gunpowder, and influential philosophies such as Confucianism and Taoism. Through periods of unity, division, and modernization, China’s history has deeply influenced its culture, traditions, and role in the world today. It offers everything from modern megacities to ancient temples, deserts, mountains, and rivers.</p>
-            <div class="image"><img src="../images/chinese-painting.jpg" alt="chinese-painting"></div>
-        </section>
+    <h2 class="history">About China</h2>
+    <p>China has one of the world’s oldest continuous histories, dating back over 5,000 years. It offers everything from modern megacities to ancient temples, deserts, mountains, and rivers.</p>
+    <img src="../images/chinese-painting.jpg" alt="Chinese Painting">
 
-        <section id="cities">
-            <h2>Cities you must visit</h2>
-            <ul style="list-style-type:none;">
-                <li>
-                    <h3>Beijing</h3>
-                    <p>China’s capital is a mix of ancient history and modern life. Tourists can explore iconic sites like the Great Wall, the Forbidden City, and the Summer Palace, as well as enjoy bustling markets, traditional food, and cultural performances.</p>
-                </li>
-                <li>
-                    <h3>Shanghai</h3>
-                    <p>A vibrant global city known for its futuristic skyline, historic Bund waterfront, and lively shopping streets. Visitors can experience modern attractions, museums, and a mix of international and local cuisine.</p>
-                </li>
-                <li>
-                    <h3>Xi’an</h3>
-                    <p>Famous as the starting point of the Silk Road, Xi’an is home to the incredible Terracotta Army and ancient city walls. Tourists can explore historic sites, traditional Muslim Quarter markets, and rich Chinese history.</p>
-                </li>
-            </ul>
-        </section>
+    <h2 class="places-title">Cities You Must Visit</h2>
+    <ul>
+        <li><strong>Beijing:</strong> China’s capital, home to the Great Wall and Forbidden City.</li>
+        <li><strong>Shanghai:</strong> A vibrant global city with a futuristic skyline.</li>
+        <li><strong>Xi’an:</strong> Famous for the Terracotta Army and ancient city walls.</li>
+    </ul>
 
-        <section id="sites">
-            <h2>Sites you must visit</h2>
-            <ul style="list-style-type:none;">
-                <li>
-                    <h3>The Forbiden City</h3>
-                    <p>The Forbidden City is the imperial palace complex in the center of the Imperial City in Beijing. The palace is now administered by the Palace Museum as a UNESCO World Heritage Site. It is one the most famous palaces in all of Chinese history, and is the largest preserved royal palace complex still standing in the world.</p>
-                    <div class="image"><img src="../images/Forbidden-Citys.jpg" alt="The Forbiden City"></div>    
-                </li>
-                <li>
-                    <h3>The great wall of China</h3>
-                    <p>The Great Wall of China is a series of fortifications in China. They were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe. The the construction started on the 7th century BC and ended on the 17th century AC. It is a UNESCO World Heritage Site, and was voted one of the New 7 Wonders of the World in 2007.</p>
-                    <div class="image"><img src="../images/greatwalls.jpg" alt="The great wall of China"></div>
-                </li>
-                <li>
-                    <h3>Teracotta army</h3>
-                    <p>The Terracotta Army is a collection of terracotta sculptures depicting the armies of the first emperor of China. It is a form of funerary art buried with the emperor in 210–209 BCE with the purpose of protecting him in his afterlife. The Terracotta Army hold more than 8,000 soldiers, 130 chariots with 520 horses, and 150 cavalry horses</p>
-                    <div class="image"><img src="../images/terracotta-army.jpg" alt="Teracotta army"></div>
-                </li>
-                <li>
-                    <h3>Potala palace</h3>
-                    <p>Potala Palace is a museum complex in Lhasa, the capital of the Tibet. From 1649 until 1959 it served as the Dalai Lamas' residence, after which it became chiefly a museum following the annexation of Tibet by the People's Republic of China. Construction of the present structure was begun in 1645 at the order of the 5th Dalai Lama</p>
-                    <div class="image"><img src="../images/potalaPalaces.jpg" alt="Potala palace"></div>
-                </li>
-            </ul>
-        </section>
+    <h2 class="places-title">Historic Sites</h2>
 
-        <section id="food">
-            <h2>Must taste</h2>
-            <table>
-            <tr>
-                <td><img src="../images/chinese-food.jpg" alt="noodle"></td>
-                <td><ul>
-                    <li>Peking Duck – crispy roasted duck, famous in Beijing</li>
-                    <li>Xiaolongbao – soup dumplings filled with meat and broth</li>
-                    <li>Chow Mein – stir-fried noodles with vegetables and meat</li>
-                    <li>Chinese Tea – a big part of Chinese culture</li>
-                </ul></td>
-            </tr>
-            </table>
-        </section>
+    <h3>The Forbidden City</h3>
+    <img src="../images/Forbidden-Citys.jpg" alt="Forbidden City">
+    <p>The Forbidden City is the largest preserved royal palace complex in the world, located in the center of Beijing.</p>
 
-        <section id="tips">
-            <h2>!Tips!</h2>
-            <ul>
-                <li>Get your visa early.</li>
-                <li>Mobile payments are widely used, especially in cities.</li>
-                <li>Respect local customs, be polite, avoid loud behavior, and respect cultural sites.</li>
-                <li>Be prepared for internet restrictions.</li>
-                <li>Follow local rules and carry identification</li>
-                <li>Try local food carefully. Street food is great, but choose clean and busy places.</li>
-                <li>Avoid sensitive political topics.</li>
-            </ul>
-        </section>
+    <h3>The Great Wall of China</h3>
+    <img src="../images/greatwalls.jpg" alt="Great Wall">
+    <p>The Great Wall is a series of fortifications built to protect the ancient Chinese states. It is one of the New 7 Wonders of the World.</p>
 
-        <footer>
-                <p>China Tourist Guide</p>
-        </footer>
+    <h3>Terracotta Army</h3>
+    <img src="../images/terracotta-army.jpg" alt="Terracotta Army">
+    <p>The Terracotta Army is a collection of sculptures depicting the armies of the first emperor of China.</p>
+
+    <h3>Potala Palace</h3>
+    <img src="../images/potalaPalaces.jpg" alt="Potala Palace">
+    <p>Potala Palace in Lhasa is a historic museum complex that served as the residence of the Dalai Lamas.</p>
+
+    <h2 class="food">Must Taste</h2>
+    <img src="../images/chinese-food.jpg" alt="Chinese Food">
+    <ul>
+        <li><strong>Peking Duck:</strong> Crispy roasted duck, famous in Beijing.</li>
+        <li><strong>Xiaolongbao:</strong> Soup dumplings filled with meat and broth.</li>
+        <li><strong>Chow Mein:</strong> Stir-fried noodles with vegetables and meat.</li>
+        <li><strong>Chinese Tea:</strong> A big part of Chinese culture.</li>
+    </ul>
+
+    <h2 class="places-title">Tips</h2>
+    <ul>
+        <li>Get your visa early.</li>
+        <li>Mobile payments are widely used.</li>
+        <li>Respect local customs and be polite.</li>
+        <li>Be prepared for internet restrictions.</li>
+    </ul>
+
+</div> 
+<footer>China Tourist Guide</footer>
 <script src="../other/js/global.js"></script>
-        </body>
-
+</body>
 </html>
