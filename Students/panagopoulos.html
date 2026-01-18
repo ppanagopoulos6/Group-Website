@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html> 
+	<head> 
+		<title>Petros Panagopoulos</title> 
+	<style> 
+		body { margin: 0; font-family: 'Segoe UI'sans-serif; 
+		background-color: #f4f7f6; 
+		color: #444; 
+		line-height: 1.6; }
+		header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            text-align: center;
+            padding: 3rem 2rem; 
+            color: white;
+            border-bottom: 4px solid #d4af37; 
+        }
+
+        header h2 {
+            color: white;
+            margin: 0;
+        }
+
+
+        header h2::after {
+            display: none;
+        }
+
+        nav {
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid #ddd;
+        }
+
+        section {
+            padding: 3rem;
+            max-width: 1000px;
+            margin: 3rem auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a1a2e;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #d4af37;
+            margin: 10px auto 0;
+        }
+
+        .center {
+            text-align: center; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background-color: #1a1a2e;
+            color: #aaa;
+            margin-top: auto;
+            border-top: 4px solid #d4af37;
+        }
+		.button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0d0d0eff;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            z-index: 9999;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .button:hover {
+            color: black;
+            transform: scale(1.1);
+            background-color: #e4e4e4ff;
+        }
+    </style>
+</head>
+
+	<body>
+	    <a href="../html/Student Information.html" class ="button">Students Information</a>
+		<header>
+			<h2>Petros Panagopoulos</h2><!-- A medium header-->
+		</header>
+
+		<section id="about"><!-- Here i declare the a section writing some important things about me while also putting an id so that way i can change it's style in css-->
+			<h2>About me</h2>
+			<!-- A paragraph-->
+			<p>My name is Petros Panagopoulos, and I am 18 years old. I was born on November 7, 2007, and I currently live in Petroupoli, Greece. In my free time, I genuinely enjoy playing video games and practicing programming. Having graduated from a vocational high school, I am focused on honing my technical skills and pursuing a future in programming.</p>
+		</section>
+
+		<section id="programming">
+			<h2>Programming</h2>
+			<p>Within the field of Computer Science, my primary focus is on <strong><!-- i use strong to highlight an important part of the text-->Game Development</strong> and <strong>Programming</strong>. My background in gaming has sparked a curiosity about how virtual worlds are built, leading me to explore the code and logic required to design them. I am eager to expand my technical skills to create my own interactive software and eventually contribute to the gaming industry.</p>
+		</section>
+
+		<footer><!-- Here i provide additional information at the end of the page that being a simple Thank you-->
+			<p>Thank you</p>
+		</footer>
+	</body>
+</html>

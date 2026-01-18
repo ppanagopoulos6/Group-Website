@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Continents</title>
+        <style>
+            /* 1. Global Styles */
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f0f2f5;
+                color: #333;
+                margin: 0;
+                padding: 20px;
+                line-height: 1.6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            /* 2. Header & Titles */
+            h1 {
+                font-size: 2.5rem;
+                color: #2c3e50;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            h2 {
+                margin-top: 0;
+                font-weight: 600;
+            }
+
+            /* 3. Top Navigation Bar (New) */
+            .nav-bar {
+                display: flex;
+                gap: 15px; /* Space between buttons */
+                margin-bottom: 25px;
+            }
+
+            .hm-button {
+                text-decoration: none;
+                color: #555;
+                background: #fff;
+                padding: 10px 20px;
+                border: 1px solid #ddd;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+                font-weight: 600;
+                font-size: 14px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            }
+
+            .hm-button:hover {
+                background: #2c3e50;
+                color: white;
+                border-color: #2c3e50;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+            /* 4. Dropdown Select Area */
+            .select-continent {
+                margin-bottom: 30px;
+                position: relative;
+            }
+
+            select#Continent-select {
+                padding: 12px 30px;
+                font-size: 16px;
+                border: 2px solid #ddd;
+                border-radius: 8px;
+                background-color: white;
+                cursor: pointer;
+                outline: none;
+                min-width: 250px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            }
+
+            select#Continent-select:focus {
+                border-color: #37a7db;
+            }
+
+            /* 5. Content Cards (The white boxes) */
+            .continent-content {
+                background: white;
+                max-width: 800px;
+                width: 100%;
+                padding: 40px;
+                border-radius: 16px;
+                box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+                display: none; /* Hidden by default */
+                animation: fadeIn 0.5s ease-in-out;
+            }
+
+            /* Center the intro text specifically */
+            #intro {
+                text-align: center;
+            }
+
+            /* 6. List Styling */
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                background: #f8f9fa;
+                margin-bottom: 12px;
+                padding: 15px;
+                border-left: 5px solid #ccc; /* Default grey border */
+                border-radius: 4px;
+            }
+
+            /* 7. Action Buttons Grid */
+            .buttons {
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+                justify-content: center;
+            }
+
+            .cta-button {
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 50px;
+                font-weight: bold;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+            }
+
+            .cta-button:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+                filter: brightness(110%);
+            }
+
+            /* Animation */
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <script>
+            function showContinent(){
+                var selectedc = document.getElementById("Continent-select").value;
+
+                var allContents = document.querySelectorAll(".continent-content");
+                allContents.forEach(function(box){
+                    box.style.display = "none";
+                });
+
+                if (selectedc) {
+                    var element = document.getElementById(selectedc);
+                    if(element){
+                        element.style.display = "block";
+                    }
+                }
+            }
+        </script>
+
+        <h1>Choose your destination</h1>
+
+        <div class="nav-bar">
+            <a href="../index.html" class="hm-button">← Home Page</a>
+            <a href="student_info.html" class="hm-button">Student Information</a>
+        </div>
+
+        <div class="select-continent">
+            <select id="Continent-select" onchange="showContinent()">
+                <option value="intro" selected>-- Select Region --</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Africa">Africa</option>
+            </select>
+        </div>
+
+        <div id="intro" class="continent-content" style="display: block;">
+            <h2>Welcome</h2>
+            <p style="color: #666;">Select a region above to begin your journey.</p>
+        </div>
+
+        <div id="America" class="continent-content">
+            <div class="content-grid">
+                <div class="text-side">
+                    <h2 style="text-align: center; color:rgb(55, 167, 219);">The Americas (North & South)</h2>
+                    <h3 style="text-align: center; font-weight: normal; color: #555;">In many parts of the world, "America" is taught as a single supercontinent. In English-speaking countries, it is usually divided into two:</h3>
+                    <ul>
+                        <li style="border-left-color: rgb(55, 167, 219);"><strong>North America:</strong> Includes the USA, Canada, and Mexico. It is economically wealthy and geographically diverse, ranging from the Arctic tundra in Northern Canada to the tropical beaches of the Caribbean.</li>
+                        <li style="border-left-color: rgb(55, 167, 219);"><strong>South America:</strong> Home to the Amazon Rainforest (the "lungs of the Earth") and the Andes Mountains (the longest continental mountain range). It is rich in biodiversity and cultural history.</li>
+                        <li style="border-left-color: rgb(55, 167, 219);"><strong>Key Fact:</strong> The Americas are the only landmasses that stretch nearly from pole to pole.</li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="America.html" class="cta-button" style="background-color: rgb(81, 150, 196);">United States</a>
+                        <a href="Canada.html" class="cta-button" style="background-color: rgb(81, 150, 196);">Canada</a>
+                        <a href="Mexico.html" class="cta-button" style="background-color: rgb(81, 150, 196);">Mexico</a>
+                        <a href="Cuba.html" class="cta-button" style="background-color: rgb(81, 150, 196);">Cuba</a>
+                        <a href="Brazil.html" class="cta-button" style="background-color: rgb(81, 150, 196);">Brazil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Africa" class="continent-content">
+            <div class="content-grid">
+                <div class="text-side">
+                    <h2 style="text-align: center; color:rgb(206, 141, 85)">Africa: The Cradle of Humankind</h2>
+                    <p>Africa is the second-largest continent and is widely believed to be the birthplace of the human species (Homo sapiens). It contains 54 sovereign countries—the most of any continent.</p>
+                    <ul>
+                        <li style="border-left-color: rgb(206, 141, 85);"><strong>Geography:</strong> Home to the world’s largest hot desert, the Sahara, and the world’s longest river, the Nile.</li>
+                        <li style="border-left-color: rgb(206, 141, 85);"><strong>Nature:</strong> Africa hosts the planet's most iconic megafauna, including elephants, lions, giraffes, and rhinos.</li>
+                        <li style="border-left-color: rgb(206, 141, 85);"><strong>Key Fact:</strong> It has the youngest population in the world, making it a region of significant future economic potential.</li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="Egypt.html" class="cta-button" style="background-color: sandybrown;">Egypt</a>
+                        <a href="Kenya.html" class="cta-button" style="background-color: sandybrown;">Kenya</a>
+                        <a href="South Africa.html" class="cta-button" style="background-color: sandybrown;">South Africa</a>
+                        <a href="Nigeria.html" class="cta-button" style="background-color: sandybrown;">Nigeria</a>
+                        <a href="Morocco.html" class="cta-button" style="background-color: sandybrown;">Morocco</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Europe" class="continent-content">
+            <div class="content-grid">
+                <div class="text-side">
+                    <h2 style="text-align: center; color:rgb(101, 197, 165);">Europe: The Peninsula of Peninsulas</h2>
+                    <p>Physically, Europe is a large peninsula extending west from the supercontinent of Eurasia. Despite being the second-smallest continent, it has had a massive influence on global history.</p>
+                    <ul>
+                        <li style="border-left-color: rgb(101, 197, 165);"><strong>Geography:</strong> Europe is defined by its irregular coastline and proximity to the sea. It features the Alps mountain range and the vast North European Plain.</li>
+                        <li style="border-left-color: rgb(101, 197, 165);"><strong>Culture & Politics:</strong> Birthplace of Western civilization (via Ancient Greece and Rome) and the Industrial Revolution.</li>
+                        <li style="border-left-color: rgb(101, 197, 165);"><strong>Key Fact:</strong> It is the third-most populous continent but faces an aging population compared to the rest of the world.</li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="france.html" class="cta-button" style="background-color:rgb(82, 218, 154);">France</a>
+                        <a href="greece.html" class="cta-button" style="background-color:rgb(82, 218, 154);">Greece</a>
+                        <a href="spain.html" class="cta-button" style="background-color:rgb(82, 218, 154);">Spain</a>
+                        <a href="italy.html" class="cta-button" style="background-color:rgb(82, 218, 154);">Italy</a>
+                        <a href="germany.html" class="cta-button" style="background-color:rgb(82, 218, 154);">Germany</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Asia" class="continent-content">
+            <div class="content-grid">
+                <div class="text-side">
+                    <h2 style="text-align: center; color:rgb(184, 90, 121)">Asia: The Land of Extremes</h2>
+                    <p>Asia is the largest and most populous continent, covering nearly 30% of the Earth's land area and hosting roughly 60% of the human population.</p>
+                    <ul>
+                        <li style="border-left-color: rgb(184, 90, 121);"><strong>Geography:</strong> It possesses the planet's most dramatic physical features, including the highest point on Earth (Mount Everest) and the lowest land point (The Dead Sea).</li>
+                        <li style="border-left-color: rgb(184, 90, 121);"><strong>Culture & Economy:</strong> Asia is the birthplace of all the world's major religions and is currently the fastest-growing economic region.</li>
+                        <li style="border-left-color: rgb(184, 90, 121);"><strong>Key Fact:</strong> It is home to more people than all other continents combined.</li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="india.html" class="cta-button" style="background-color: rgb(212, 93, 129);">India</a>
+                        <a href="thailand.html" class="cta-button" style="background-color: rgb(212, 93, 129);">Thailand</a>
+                        <a href="china.html" class="cta-button" style="background-color: rgb(212, 93, 129);">China</a>
+                        <a href="jordan.html" class="cta-button" style="background-color: rgb(212, 93, 129);">Jordan</a>
+                        <a href="japan.html" class="cta-button" style="background-color: rgb(212, 93, 129);">Japan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
